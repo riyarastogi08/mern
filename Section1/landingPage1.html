@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiFoot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    header{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStTHFD6OyD29z50Gy3lGC22PINZfmbe8LX7UH25dEeG0aIO6u-9z30LHXUoGTyctBEzxc&usqp=CAU);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+    .hero-title{
+            font-weight: bolder;
+            font-size: 3rem;
+            text-shadow: 1px 2px whitesmoke;
+        }
+        .hero-subtitle{
+            font-size: 1.5rem;
+            text-shadow: 1px 1px whitesmoke;
+        }
+        .card{
+            height: 20.5vh;
+            width: 100%;
+        }
+        .feature-card{
+            box-shadow: 2px 5px black;
+        }
+        .feature-card:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            background-color: burlywood; 
+            color: brown;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1 class="hero-title">Welcome to IndiFoot</h1>
+        <h5 class="hero-subtitle">- Your Destination for Stylish Footwear!</h5>
+        <button class="btn btn-outline-danger">Learn More</button>
+    </header>
+
+     <!-- Main Content-->
+    <!-- About Section-->
+    <section>
+        <div class="container mt-5 d-flex justify-content-center">
+            <div class="card bg-dark w-50">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="data:image/png;base64,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" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                    <h2 class="text-center text-light">About Us</h2>
+                    <p class="text-center text-light">IndiFoot is all about footwear. We have been in the shoe business for over 25 yrs. Today we are proud to offer our best customer service in our shoe stores.</p>
+                </div>
+            </div>
+            </div>
+        </div>    
+    </section>
+    <section class="mt-5 mb-5">
+        <h1 class="text-center mb-5">OUR FEATURES</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card feature-card text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, ipsa.</p>   
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, ipsa.</p>   
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, ipsa.</p>   
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </section>
+<!-- Signup Section-->
+<section class="mb-5">
+    <h1 class="text-center mb-5" style="font-weight: bolder; font-size: 50px;">Want to learn more</h1>
+    <div class="container vid d-flex justify-content-center align-items-center">
+         <div class="signup-content" style="z-index:2;">
+             <h5>Signup for 30% discount</h5>
+             <p>Want to get an instant discount<br> for best offers</p>
+             <input type="text" placeholder="Enter your email">
+             <button class="btn btn-danger">Signup</button>
+         </div>
+         <video class="video"src="sea.mp4"autoplay loop muted></video>
+     </div>
+ </section> 
+
+ <!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-light">
+ <!-- Section: Social media -->
+ <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+   <!-- Left -->
+   <div class="me-5 d-none d-lg-block">
+     <span>Get connected with us on social networks:</span>
+   </div>
+   <!-- Left -->
+
+   <!-- Right -->
+   <div>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-facebook-f"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-twitter"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-google"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-instagram"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-linkedin"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-github"></i>
+     </a>
+   </div>
+   <!-- Right -->
+ </section>
+ <!-- Section: Social media -->
+
+ <!-- Section: Links  -->
+ <section class="">
+   <div class="container text-center text-md-start mt-5">
+     <!-- Grid row -->
+     <div class="row mt-3">
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+         <!-- Content -->
+         <h6 class="text-uppercase fw-bold mb-4">
+           <i class="fas fa-gem me-3"></i>Company name
+         </h6>
+         <p>
+           Here you can use rows and columns to organize your footer content. Lorem ipsum
+           dolor sit amet, consectetur adipisicing elit.
+         </p>
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold mb-4">
+           Products
+         </h6>
+         <p>
+           <a href="#!" class="text-reset">Angular</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">React</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Vue</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Laravel</a>
+         </p>
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold mb-4">
+           Useful links
+         </h6>
+         <p>
+           <a href="#!" class="text-reset">Pricing</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Settings</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Orders</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Help</a>
+         </p>
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+         <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+         <p>
+           <i class="fas fa-envelope me-3"></i>
+           info@example.com
+         </p>
+         <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+         <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+       </div>
+       <!-- Grid column -->
+     </div>
+     <!-- Grid row -->
+   </div>
+ </section>
+ <!-- Section: Links  -->
+
+ <!-- Copyright -->
+ <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+   © 2021 Copyright:
+   <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+ </div>
+ <!-- Copyright -->
+</footer>
+<!-- Footer -->  
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Landing WebPage</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ <style>
+     header{
+         background-image: url(https://i.pinimg.com/736x/43/23/27/432327f68a83f9911cb25fea765e9252.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         height: 70vh;
+         display: flex;
+         flex-direction:column ;
+         justify-content: center;
+         align-items: center;
+         color:white;
+     }
+     .hero-title{
+         font-weight:bolder;
+         font-size: 4.5rem;
+         text-shadow: 1px 2px black;
+     }
+     .hero-subtitle{
+         text-shadow: 1px 1px black;
+         font-size: 2.5rem;
+     } 
+     .feature-card{
+         box-shadow: 2px 5px black;
+     }
+     .feature-card:hover{
+         transform: scale(1.1);
+         transition: 0.5s;
+         background-color: rgb(171, 91, 208);
+         color: rgb(236, 231, 231);
+     }
+     .video{
+         width: 100%;
+         height: 200px;
+         object-fit: cover;
+     }
+     .signup-content{
+         position: absolute;
+         text-align: center;
+         color: white;
+     }
+     .vid{
+         position: relative;
+     }
+ </style>
+</head>
+<body>
+ <header>
+     <h1 class="hero-title">Welcome to my Website</h1>
+     <h5 class="hero-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, nesciunt!</h5>
+     <button class="btn btn-outline-dark mt-4">Learn More</button>
+
+ </header>
+ <!-- Main -->
+ <!-- About Section -->
+ <section>
+     <div class="container mt-5 d-flex justify-content-center">
+         <div class="card bg-dark w-50">
+             <div class="row">
+                 <div class="col-md-6">
+                     <img src="https://cdn.dribbble.com/users/1255752/screenshots/2810162/irene-cantando.gif" alt="" class="img-fluid">
+                 </div>
+                 <div class="col-md-6">
+                     <h4 class="text-center text-light p-4">About Us</h4>
+                     <p class="text-center text-light p-4 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, eaque.</p>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <section class="mt-5 mb-5">
+     <h1 class="text-center mb-5">OUR FEATURES</h1>
+     <div class="row">
+         <div class="col-md-4">
+             <div class="card feature-card text-center">
+                 <i class="fa-4x fa-solid fa-handshake mt-3"></i>
+                 <p style="font-size: small;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, nam.</p>
+             </div>
+         </div>
+         <div class="col-md-4">
+             <div class="card feature-card text-center">
+                 <i class="fa-4x fa-solid fa-user mt-3"></i>
+                 <p style="font-size: small;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, nam.</p>
+             </div>
+         </div>
+         <div class="col-md-4">
+             <div class="card feature-card text-center">
+                 <i class="fa-4x fa-solid fa-heart mt-3"></i>
+                 <p style="font-size: small;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, nam.</p>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- Signup Section-->
+ <section class="mb-5">
+    <h1 class="text-center mb-5" style="font-weight: bolder; font-size: 50px;">Want to learn more</h1>
+    <div class="container vid d-flex justify-content-center align-items-center">
+         <div class="signup-content" style="z-index:2;">
+             <h5>Signup for 30% discount</h5>
+             <p>Want to get an instant discount<br> for best offers</p>
+             <input type="text" placeholder="Enter your email">
+             <button class="btn btn-danger">Signup</button>
+         </div>
+         <video class="video"src="sea.mp4"autoplay loop muted></video>
+     </div>
+ </section> 
+
+ <!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-light">
+ <!-- Section: Social media -->
+ <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+   <!-- Left -->
+   <div class="me-5 d-none d-lg-block">
+     <span>Get connected with us on social networks:</span>
+   </div>
+   <!-- Left -->
+
+   <!-- Right -->
+   <div>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-facebook-f"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-twitter"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-google"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-instagram"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-linkedin"></i>
+     </a>
+     <a href="" class="me-4 text-reset">
+       <i class="fab fa-github"></i>
+     </a>
+   </div>
+   <!-- Right -->
+ </section>
+ <!-- Section: Social media -->
+
+ <!-- Section: Links  -->
+ <section class="">
+   <div class="container text-center text-md-start mt-5">
+     <!-- Grid row -->
+     <div class="row mt-3">
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+         <!-- Content -->
+         <h6 class="text-uppercase fw-bold mb-4">
+           <i class="fas fa-gem me-3"></i>Company name
+         </h6>
+         <p>
+           Here you can use rows and columns to organize your footer content. Lorem ipsum
+           dolor sit amet, consectetur adipisicing elit.
+         </p>
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold mb-4">
+           Products
+         </h6>
+         <p>
+           <a href="#!" class="text-reset">Angular</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">React</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Vue</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Laravel</a>
+         </p>
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold mb-4">
+           Useful links
+         </h6>
+         <p>
+           <a href="#!" class="text-reset">Pricing</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Settings</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Orders</a>
+         </p>
+         <p>
+           <a href="#!" class="text-reset">Help</a>
+         </p>
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+         <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+         <p>
+           <i class="fas fa-envelope me-3"></i>
+           info@example.com
+         </p>
+         <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+         <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+       </div>
+       <!-- Grid column -->
+     </div>
+     <!-- Grid row -->
+   </div>
+ </section>
+ <!-- Section: Links  -->
+
+ <!-- Copyright -->
+ <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+   © 2021 Copyright:
+   <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+ </div>
+ <!-- Copyright -->
+</footer>
+<!-- Footer -->  
+</body>
+</html>

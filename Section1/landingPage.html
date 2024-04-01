@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        header{
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            height: 50vh;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_AjYm8UNM-a59WZ1BK1zRoSktdM19xrDbVg&usqp=CAU)
+        }
+        .hero-title{
+            font-weight: bolder;
+            font-size: 3rem;
+            text-shadow: 1px 2px whitesmoke;
+        }
+        .hero-subtitle{
+            text-shadow: 1px 1px whitesmoke;
+        }
+    
+        .feature-card{
+            box-shadow: 2px 5px black;
+        }
+        .feature-card:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            background-color:burlywood;
+            color: brown;
+        }
+        .video{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .signup-content{
+            position: absolute;
+            text-align: center;
+            padding-top: 30px;
+            color: white;
+        }
+        .vid{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="hero-title">Welcome to my Website</h1>
+        <h5 class="hero-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, amet.</h5>
+        <button class="btn btn-outline-dark w-25 text-align">Learn more</button>
+    </header>
+
+    <!-- Main Content-->
+    <!-- About Section-->
+    <section>
+        <div class="container mt-5 d-flex justify-content-center">
+            <div class="card bg-dark w-50">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://cdn.dribbble.com/userupload/12998560/file/original-fd89c907c6b19b2d5f6ab229be3d63df.gif" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                    <h3 class="text-center text-light">About Us</h3>
+                    <p class="text-center text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque magnam deserunt saepe sit temporibus eos officiis consequuntur nesciunt unde.</p>
+                </div>
+            </div>
+            </div>
+        </div>    
+    </section>
+    <section class="mt-5 mb-5">
+        <h1 class="text-center mb-5">OUR FEATURES</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card feature-card text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, ipsa.</p>   
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, ipsa.</p>   
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, ipsa.</p>   
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+    <!--Signup Section-->
+    <section class="mb-5">
+    <h1 class="text-center mb-5" style="font-weight: bolder; font-size: 50px;">Want To Learn More</h1>
+    <div class="container vid d-flex justify-content-center align-item-center">
+        <div class="signup-content" style="z-index: 2;">
+            <h5>Signup for 30% discount</h5>
+            <p>Wants to get an instant discount <br> for best offers</p>
+            <input type="text" placeholder="Enter your Email">
+            <button class="btn btn-danger">Signup</button>
+        </div>
+        <video class="video" src="sea.mp4" autoplay loop muted></video>
+    </div>
+</section>
+
+<footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+        data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</body>
+</html>
