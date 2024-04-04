@@ -37,6 +37,11 @@ const Navbar = () => {
                   Login
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/EventHandling">
+                  Event Handling
+                </Link>
+              </li>
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
