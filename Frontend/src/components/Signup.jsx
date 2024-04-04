@@ -1,6 +1,7 @@
 import React from 'react'
 import {useFormik} from 'formik'
 import * as Yup from 'yup'
+import { enqueueSnackbar } from 'notistack'
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
@@ -27,6 +28,7 @@ const Signup = () => {
     // step 5: validation schema
     onSubmit: (values, {resetForm}) => {
       console.log(values)
+      enqueueSnackbar('Signup successfully', {variant: 'success'})
         resetForm()
     },
     validationSchema: SignupSchema
