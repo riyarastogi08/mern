@@ -2,14 +2,14 @@ import React from 'react'
 import {useFormik} from 'formik'
 import * as Yup from 'yup'
 
-const SignupSchema = Yup.object.shape({
+const SignupSchema = Yup.object().shape({
   name: Yup.string()
   .required('Name is required')
   .min(3, 'Name must be atleast e characters')
-  .max(15, 'Name must be atmost 15 characters ')
+  .max(15, 'Name must be atmost 15 characters '),
   email: Yup.string()
   .required('Email is required')
-  .email ('Email is in valid')
+  .email ('Email is in valid'),
   password: Yup.string()
   .required('Passwaord is required')
   .min(8, 'Password must be atleast 8 characters')
@@ -37,7 +37,7 @@ const Signup = () => {
             <div className="col">
                 <div className="card w-25 d-block mx-auto">
                     <div className="card-header">
-                        <h3>Login</h3>
+                        <h3>Sign Up</h3>
                     </div>
                     <div className="card-body">
                       {/* step 2: handling when submit*/}
@@ -67,7 +67,7 @@ const Signup = () => {
                             onChange={signupForm.handleChange}
                             value={signupForm.values.password}/> 
                         </div>
-                        <button type='submit' className="btn btn-primary">Login</button>
+                        <button type='submit' className="btn btn-primary">Sign Up</button>
                     </form>
                 </div>
             </div>
