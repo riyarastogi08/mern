@@ -5,8 +5,8 @@ import { enqueueSnackbar } from 'notistack'
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
-  .required('Name is required')
-  .min(3, 'Name must be atleast e characters')
+  .required(' required')
+  .min(3, 'Name must be atleast 3    characters')
   .max(15, 'Name must be atmost 15 characters '),
   email: Yup.string()
   .required('Email is required')

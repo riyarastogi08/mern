@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-      <header>
+      <header  >
        { /* <img src ={logo} alt="logo" />*/}
         <h1>Hello !!</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
