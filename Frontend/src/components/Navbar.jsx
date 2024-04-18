@@ -42,6 +42,21 @@ const Navbar = () => {
                   Event Handling
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/AddProduct">
+                  AddProduct
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/ProductListing">
+                  ProductListing
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/ManageUsers">
+                  ManageUsers
+                </Link>
+              </li>
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"

@@ -8,6 +8,8 @@ import Login from './components/Login'
 import EventHandling from './components/EventHandling'
 import {SnackbarProvider} from 'notistack'
 import ManageUsers from './components/ManageUsers'
+import AddProduct from './components/AddProduct'
+import ProductListing from './components/ProductListing'
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
         <Route path= '/Login' element= {<Login />} />
         <Route path= '/EventHandling' element= {<EventHandling />} />
         <Route path= '/ManageUsers' element= {<ManageUsers />} />
+        <Route path= '/AddProduct' element= {<AddProduct />} />
+        <Route path= '/ProductListing' element= {<ProductListing />} />
         </Routes>
         </BrowserRouter>
     </div>
