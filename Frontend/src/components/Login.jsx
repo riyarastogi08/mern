@@ -2,6 +2,7 @@ import React from 'react'
 import {useFormik} from 'formik'
 import * as Yup from 'yup'
 import { enqueueSnackbar } from 'notistack'
+import useUserContext from '../UserContext'
 
 const LoginSchema =Yup.object().shape({
   name: Yup.string()
@@ -15,6 +16,11 @@ const LoginSchema =Yup.object().shape({
 })
 
 const Login = () => {
+
+  //for logout
+
+  const {setlogedIn} = useUserContext;
+
   // step 1: formik initialization
   const loginForm = useFormik({
     initialValues: {

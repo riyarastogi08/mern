@@ -10,6 +10,7 @@ import {SnackbarProvider} from 'notistack'
 import ManageUsers from './components/ManageUsers'
 import AddProduct from './components/AddProduct'
 import ProductListing from './components/ProductListing'
+import UpdateProduct from './components/UpdateProduct'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path= '/ManageUsers' element= {<ManageUsers />} />
         <Route path= '/AddProduct' element= {<AddProduct />} />
         <Route path= '/ProductListing' element= {<ProductListing />} />
+        <Route path= '/UpdateProduct/:id' element= {<UpdateProduct />} />
         </Routes>
         </BrowserRouter>
     </div>

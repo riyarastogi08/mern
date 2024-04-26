@@ -1,7 +1,35 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import useUserContext from '../UserContext'
 
 const Navbar = () => {
+  const{ loggedIn, logout }  = useUserContext();
+  console.log(loggedIn);
+  const showLoggedIn = () => {
+    if(loggedIn) {
+      return(
+        <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
+          <li className='nav-item'>
+            <button style={{ fontFamily: "initial"}} className='btn btn-danger mb-3' onClick={logout} >
+              Logout
+            </button>
+          </li>
+        </ul>
+      );
+    } else{
+      return <div className="">
+        <div className="">
+        <Link className="nav-link" to="/Signup">
+                  Signup
+                </Link>
+                <Link className="nav-link" to="/Login">
+                  Login
+                </Link>
+        </div>
+      </div>
+    }
+  };
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,7 +55,8 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
+              {showLoggedIn()}
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/Signup">
                   Signup
                 </Link>
@@ -36,7 +65,7 @@ const Navbar = () => {
                 <Link className="nav-link" to="/Login">
                   Login
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/EventHandling">
                   Event Handling
