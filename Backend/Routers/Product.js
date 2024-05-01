@@ -13,5 +13,14 @@ router.post('/add', (req,res) => {
         res.status(500).json(err)
     });
 })
+router.post('/getall', (req, res) => {
+    Model.find ({})
+    .then((result) => {
+        res.json(result);
+    }).catch((err) => {
+       console.log(err);
+       res.status(200).json (err)
+    });
+})
 
 module.exports = router;

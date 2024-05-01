@@ -15,6 +15,7 @@ const [Data, setData] = useState([])
         fetchUserData()
     }, [])
 
+
     const displayUsers =() => {
         return Data.map((user) => {
             <tr>

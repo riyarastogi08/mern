@@ -11,12 +11,15 @@ import ManageUsers from './components/ManageUsers'
 import AddProduct from './components/AddProduct'
 import ProductListing from './components/ProductListing'
 import UpdateProduct from './components/UpdateProduct'
+import ManageProduct from './components/ManageProduct'
+import {UserProvider} from './UserContext'
 
 const App = () => {
   return (
     <div>
       <SnackbarProvider />
       <BrowserRouter>
+      <UserProvider>
       <Navbar />
       <Routes>
         {/* <Route path= '/' element= {<Home />} /> */}
@@ -26,10 +29,12 @@ const App = () => {
         <Route path= '/Login' element= {<Login />} />
         <Route path= '/EventHandling' element= {<EventHandling />} />
         <Route path= '/ManageUsers' element= {<ManageUsers />} />
+        <Route path= '/ManageProduct' element= {<ManageProduct />} />
         <Route path= '/AddProduct' element= {<AddProduct />} />
         <Route path= '/ProductListing' element= {<ProductListing />} />
         <Route path= '/UpdateProduct/:id' element= {<UpdateProduct />} />
         </Routes>
+        </UserProvider>
         </BrowserRouter>
     </div>
   )
